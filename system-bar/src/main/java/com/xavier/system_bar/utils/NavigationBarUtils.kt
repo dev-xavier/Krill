@@ -13,20 +13,23 @@ object NavigationBarUtils {
     //  当 navigation bar 隐藏时 getInsets() 获取的高度为 0
     //  The insets are only available if the view is attached.
     fun navigationBarHeight(view: View): Int {
-        return ViewCompat.getRootWindowInsets(view)?.getInsets(WindowInsetsCompat.Type.navigationBars())?.bottom ?: 0
+        return ViewCompat.getRootWindowInsets(view)
+            ?.getInsets(WindowInsetsCompat.Type.navigationBars())?.bottom ?: 0
     }
 
     // NOTE 获取导航栏物理高度
     //  在 navigation bar 隐藏时也能获取高度
     //  The insets are only available if the view is attached.
     fun navigationBarPhysicsHeight(view: View): Int {
-        return ViewCompat.getRootWindowInsets(view)?.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.navigationBars())?.bottom ?: 0
+        return ViewCompat.getRootWindowInsets(view)
+            ?.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.navigationBars())?.bottom ?: 0
     }
 
     // NOTE 获取导航栏是否可见
     //  The insets are only available if the view is attached.
     fun navigationBarIsVisible(view: View): Boolean {
-        return ViewCompat.getRootWindowInsets(view)?.isVisible(WindowInsetsCompat.Type.navigationBars()) ?: true
+        return ViewCompat.getRootWindowInsets(view)
+            ?.isVisible(WindowInsetsCompat.Type.navigationBars()) ?: true
     }
 
     // NOTE 设置导航栏背景颜色

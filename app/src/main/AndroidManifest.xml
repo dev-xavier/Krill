@@ -3,12 +3,29 @@
     package="com.xavier.krill">
 
     <application
+        android:name=".MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Krill">
+        <activity
+            android:name=".vs.RoundedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".test.ImmersiveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".test.ImmersiveSystemBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".test.FullScreenExperienceActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FullScreenExperience" />
+        <activity
+            android:name=".test.SystemBarActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

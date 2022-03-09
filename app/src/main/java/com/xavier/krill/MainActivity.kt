@@ -1,11 +1,15 @@
 package com.xavier.krill
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.xavier.krill.base.ViewBindingActivity
+import com.xavier.krill.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ViewBindingActivity<ActivityMainBinding>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_container, BrowseFragment())
+            .commit()
     }
 }

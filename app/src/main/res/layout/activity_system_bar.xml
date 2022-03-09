@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.SystemBarActivity">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexbox_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:flexWrap="wrap"
+        tools:context=".test.SystemBarActivity">
+
+        <ImageView
+            android:id="@+id/top_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/purple_200" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="isNightModeClick"
+            android:text="是否是暗色模式" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="systemBarColorClick"
+            android:text="设置 system bar 的背景颜色" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="systemBarTransparentClick"
+            android:text="设置 system bar 背景透明" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="systemBarLightModeClick"
+            android:text="设置 system bar 亮色模式" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="systemBarDarkModeClick"
+            android:text="设置 system bar 暗色模式" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="showSystemBarClick"
+            android:text="显示 system bar" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="hideSystemBarClick"
+            android:text="隐藏 system bar" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="lightDarkModeByUiDayNightClick"
+            android:text="根据日夜间模式设置 system bar 亮/暗色" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="lightDarkModeByColorLuminanceClick"
+            android:text="根据 color 亮度设置 system bar 亮/暗色" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="immersiveStatusBarClick"
+            android:text="沉浸式状态栏" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="immersiveSystemBarClick"
+            android:text="edge-to-edge 适配" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="fullScreenFalseClick"
+            android:text="请求进行全屏布局 false" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="fullScreenTrueClick"
+            android:text="请求进行全屏布局 true" />
+
+        <Button
+            style="@style/ButtonBase"
+            android:onClick="edgeToEdgeClick"
+            android:text="edge-to-edge 适配" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</androidx.core.widget.NestedScrollView>

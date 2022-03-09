@@ -2,24 +2,23 @@ package com.xavier.installer
 
 import android.content.Context
 
-class KrillInstaller private constructor(applicationContext: Context) {
+class KrillInstaller private constructor(context: Context) {
 
     init {
-        appContext = applicationContext
+        appContext = context
     }
 
     companion object {
-        // For Singleton instantiation
         @Volatile
         private var INSTANCE: KrillInstaller? = null
+        @Volatile
+        lateinit var appContext: Context
+            private set
+
         fun init(context: Context) {
             INSTANCE ?: synchronized(this) {
                 INSTANCE ?: KrillInstaller(context).also { INSTANCE = it }
             }
         }
-
-        @Volatile
-        lateinit var appContext: Context
-            private set
     }
 }

@@ -33,5 +33,6 @@ android {
 
 dependencies {
 
-    api project(':installer')
+    //api project(':installer')
+    api project(':auto-installer')
 }

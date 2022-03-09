@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".vs.RoundedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/round_one_title"
+            style="@style/TextTitle"
+            android:text="Round one" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    style="@style/ImageBase"
+                    app:shapeAppearance="@style/Rounded" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_one"
+                    style="@style/ImageBase" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    style="@style/ImageNormal"
+                    app:shapeAppearance="@style/Rounded" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/end_image_one"
+                    style="@style/ImageNormal" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/round_one_directions"
+            style="@style/TextDirections"
+            android:text="Round one 说明: 暂无" />
+
+        <TextView
+            android:id="@+id/round_two_title"
+            style="@style/TextTitle"
+            android:text="Round two" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    style="@style/ImageBase"
+                    app:shapeAppearance="@style/Circle" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_two"
+                    style="@style/ImageBase" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    style="@style/ImageNormal"
+                    app:shapeAppearance="@style/Circle" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/end_image_two"
+                    style="@style/ImageNormal" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/round_two_directions"
+            style="@style/TextDirections"
+            android:text="Round two 说明: 暂无" />
+
+        <TextView
+            android:id="@+id/round_three_title"
+            style="@style/TextTitle"
+            android:text="Round three" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    style="@style/ImageBase"
+                    app:shapeAppearance="@style/Top" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_three"
+                    style="@style/ImageBase" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    style="@style/ImageNormal"
+                    app:shapeAppearance="@style/Top" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/end_image_three"
+                    style="@style/ImageNormal" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/round_three_directions"
+            style="@style/TextDirections"
+            android:text="Round three 说明: 暂无" />
+
+        <TextView
+            android:id="@+id/round_four_title"
+            style="@style/TextTitle"
+            android:text="Round four" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    style="@style/ImageBase"
+                    app:shapeAppearance="@style/TopLeft" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_four"
+                    style="@style/ImageBase" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    style="@style/ImageNormal"
+                    app:shapeAppearance="@style/TopLeft" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/end_image_four"
+                    style="@style/ImageNormal" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/round_four_directions"
+            style="@style/TextDirections"
+            android:text="Round four 说明: 暂无" />
+
+        <TextView
+            android:id="@+id/round_five_title"
+            style="@style/TextTitle"
+            android:text="Round five" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    style="@style/ImageBase"
+                    app:shapeAppearance="@style/Diagonal" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_five"
+                    style="@style/ImageBase" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    style="@style/ImageNormal"
+                    app:shapeAppearance="@style/Diagonal" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/end_image_five"
+                    style="@style/ImageNormal" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/round_five_directions"
+            style="@style/TextDirections"
+            android:text="Round five 说明: 暂无" />
+
+        <TextView
+            android:id="@+id/other_title"
+            style="@style/TextTitle"
+            android:text="Other" />
+
+        <TextView
+            android:id="@+id/other_directions"
+            style="@style/TextDirections"
+            android:text="Other 说明: 暂无" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -13,20 +13,23 @@ object StatusBarUtils {
     //  当 status bar 隐藏时 getInsets() 获取的高度为 0
     //  The insets are only available if the view is attached.
     fun statusBarHeight(view: View): Int {
-        return ViewCompat.getRootWindowInsets(view)?.getInsets(WindowInsetsCompat.Type.statusBars())?.top ?: 0
+        return ViewCompat.getRootWindowInsets(view)
+            ?.getInsets(WindowInsetsCompat.Type.statusBars())?.top ?: 0
     }
 
     // NOTE 获取状态栏物理高度
     //  在 status bar 隐藏时也能获取高度
     //  The insets are only available if the view is attached.
     fun statusBarPhysicsHeight(view: View): Int {
-        return ViewCompat.getRootWindowInsets(view)?.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.statusBars())?.top ?: 0
+        return ViewCompat.getRootWindowInsets(view)
+            ?.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.statusBars())?.top ?: 0
     }
 
     // NOTE 获取状态栏是否可见
     //  The insets are only available if the view is attached.
     fun statusBarIsVisible(view: View): Boolean {
-        return ViewCompat.getRootWindowInsets(view)?.isVisible(WindowInsetsCompat.Type.statusBars()) ?: true
+        return ViewCompat.getRootWindowInsets(view)?.isVisible(WindowInsetsCompat.Type.statusBars())
+            ?: true
     }
 
     // NOTE 设置状态栏背景颜色

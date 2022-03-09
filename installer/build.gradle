@@ -38,8 +38,4 @@ dependencies {
     api(AndroidX.coreKtx)
     api(AndroidX.appCompat)
     api(GoogleDeps.material)
-
-    /*testApi(TestDeps.junit)
-    androidTestApi(TestDeps.extJunit)
-    androidTestApi(TestDeps.espressoCore)*/
 }
