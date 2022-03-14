@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="shape_all_corner">10000</integer>
+
+    <integer name="shape_top_corner">10001</integer>
+    <integer name="shape_bottom_corner">10002</integer>
+    <integer name="shape_left_corner">10003</integer>
+    <integer name="shape_right_corner">10004</integer>
+
+    <integer name="shape_top_left_corner">10005</integer>
+    <integer name="shape_top_right_corner">10006</integer>
+    <integer name="shape_bottom_left_corner">10007</integer>
+    <integer name="shape_bottom_right_corner">10008</integer>
+
+    <integer name="shape_top_left_diagonal">10009</integer>
+    <integer name="shape_top_right_diagonal">10010</integer>
+
+</resources>

@@ -9,30 +9,39 @@ import androidx.core.view.WindowInsetsCompat
 
 object StatusBarUtils {
 
-    // NOTE 获取状态栏高度
-    //  当 status bar 隐藏时 getInsets() 获取的高度为 0
-    //  The insets are only available if the view is attached.
+    /**
+     * 获取状态栏高度, The insets are only available if the view is attached.
+     * @return 状态栏高度 [Int], 在 status bar 隐藏时 [WindowInsetsCompat.getInsets] 获取的高度为 0
+     */
     fun statusBarHeight(view: View): Int {
         return ViewCompat.getRootWindowInsets(view)
             ?.getInsets(WindowInsetsCompat.Type.statusBars())?.top ?: 0
     }
 
-    // NOTE 获取状态栏物理高度
-    //  在 status bar 隐藏时也能获取高度
-    //  The insets are only available if the view is attached.
+
+    /**
+     * 获取状态栏物理高度, The insets are only available if the view is attached.
+     * @return 状态栏高度 [Int], 在 status bar 隐藏时也能获取高度
+     */
     fun statusBarPhysicsHeight(view: View): Int {
         return ViewCompat.getRootWindowInsets(view)
             ?.getInsetsIgnoringVisibility(WindowInsetsCompat.Type.statusBars())?.top ?: 0
     }
 
-    // NOTE 获取状态栏是否可见
-    //  The insets are only available if the view is attached.
+    /**
+     * 状态栏是否可见, The insets are only available if the view is attached.
+     * @return true 可见, false 不可见 [Boolean], 在 status bar 隐藏时也能获取高度
+     */
     fun statusBarIsVisible(view: View): Boolean {
         return ViewCompat.getRootWindowInsets(view)?.isVisible(WindowInsetsCompat.Type.statusBars())
             ?: true
     }
 
-    // NOTE 设置状态栏背景颜色
+    /**
+     * 设置状态栏背景颜色, The insets are only available if the view is attached.
+     * @param window [Window]
+     * @param color [ColorInt]
+     */
     fun statusBarColor(window: Window, @ColorInt color: Int = Color.TRANSPARENT) {
         window.statusBarColor = color
     }

@@ -1,11 +1,18 @@
 package com.xavier.krill
 
+import android.annotation.SuppressLint
+import android.view.KeyEvent.ACTION_DOWN
+import android.view.KeyEvent.ACTION_UP
+import android.view.MotionEvent
+import android.view.MotionEvent.ACTION_CANCEL
 import android.view.View
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.BindingAdapter
 import com.google.android.material.internal.ViewUtils.requestApplyInsetsWhenAttached
 
+// LINK WindowInsets — listeners to layouts https://medium.com/androiddevelopers/windowinsets-listeners-to-layouts-8f9ccc8fa4d1
+@SuppressLint("RestrictedApi")
 fun View.doOnApplyWindowInsets(f: (View, WindowInsetsCompat, InitialPadding) -> Unit) {
     // Create a snapshot of the view's padding state
     val initialPadding = recordInitialPaddingForView(this)
@@ -57,5 +64,17 @@ fun applySystemWindows(
                 padding.bottom + bottom
             )
         }
+    }
+}
+
+fun MotionEvent?.print(): String {
+    if(this==null){
+        return "null"
+    }
+    return when (action) {
+        ACTION_DOWN -> "ACTION_DOWN"
+        ACTION_UP -> "ACTION_UP"
+        ACTION_CANCEL -> "ACTION_CANCEL"
+        else -> "其他"
     }
 }

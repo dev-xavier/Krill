@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".test.SystemBarActivity">
+    tools:context=".test.system_bar.SystemBarActivity">
 
     <com.google.android.flexbox.FlexboxLayout
         android:id="@+id/flexbox_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:flexWrap="wrap"
-        tools:context=".test.SystemBarActivity">
+        app:flexWrap="wrap">
 
         <ImageView
             android:id="@+id/top_image"

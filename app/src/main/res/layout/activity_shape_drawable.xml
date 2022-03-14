@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.shape_drawable.ShapeDrawableActivity">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexbox_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:flexWrap="wrap">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_one"
+            style="@style/ImageBaseSecondary" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_two"
+            style="@style/ImageBaseSecondary" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_three"
+            style="@style/ImageBaseSecondary" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_four"
+            style="@style/ImageBaseSecondary" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_five"
+            style="@style/ImageBaseSecondary" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_six"
+            style="@style/ImageBaseSecondary" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_seven"
+            style="@style/ImageBaseSecondary" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_eight"
+            style="@style/ImageBaseSecondary" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_nine"
+            style="@style/ImageBaseSecondary" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_ten"
+            style="@style/ImageBaseSecondary" />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</androidx.core.widget.NestedScrollView>

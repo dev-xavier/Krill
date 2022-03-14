@@ -1,4 +1,4 @@
-package com.xavier.krill.test
+package com.xavier.krill.test.system_bar
 
 import android.os.Bundle
 import androidx.core.view.*

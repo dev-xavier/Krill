@@ -1,4 +1,4 @@
-package com.xavier.krill.utils
+package com.xavier.installer.utils
 
 import android.content.res.Resources
 
@@ -10,7 +10,7 @@ val Int.dp2px: Int
         return (this * scale + 0.5f).toInt()
     }
 
-val Float.dp2px: Float
+val Float.dpTpx: Float
     get() {
         val scale = Resources.getSystem().displayMetrics.density
         return this * scale + 0.5f

@@ -6,10 +6,11 @@ import android.view.View
 import android.widget.ListView
 import android.widget.SimpleAdapter
 import androidx.fragment.app.ListFragment
-import com.xavier.krill.test.FullScreenExperienceActivity
-import com.xavier.krill.test.ImmersiveActivity
-import com.xavier.krill.test.ImmersiveSystemBarActivity
-import com.xavier.krill.test.SystemBarActivity
+import com.xavier.krill.test.system_bar.FullScreenExperienceActivity
+import com.xavier.krill.test.system_bar.ImmersiveActivity
+import com.xavier.krill.test.system_bar.ImmersiveSystemBarActivity
+import com.xavier.krill.test.shape_drawable.ShapeDrawableActivity
+import com.xavier.krill.test.system_bar.SystemBarActivity
 import com.xavier.krill.vs.RoundedActivity
 
 class BrowseFragment : ListFragment() {
@@ -44,6 +45,10 @@ class BrowseFragment : ListFragment() {
             mapOf(
                 "title" to "VS ShapeableImageView : 圆角裁剪和 Drawable 背景",
                 "intent" to activityToIntent(RoundedActivity::class.java.name)
+            ),
+            mapOf(
+                "title" to "shape drawable",
+                "intent" to activityToIntent(ShapeDrawableActivity::class.java.name)
             )
         )
     }

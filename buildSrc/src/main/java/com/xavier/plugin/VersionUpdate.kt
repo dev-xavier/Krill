@@ -24,8 +24,20 @@ object VersionUpdate {
     const val flexboxLayout = "3.0.0"
     const val timber = "5.0.1"
 
+    // Kotlin
+    const val kotlin = "1.5.30"
+    const val kotlinXCoroutinesCore = "1.4.2"
+
     // 对 Jetpack AAC 架构组件的一些扩展/补充/工具
     const val viewBindingKtx = "2.0.2"
+
+    // Retrofit
+    const val retrofit = "2.9.0"
+
+    // OkHttpSingleClick
+    const val okHttp = "4.9.3"
+
+    const val chucker = "3.5.2"
 
     // Test
     const val junit = "4.13.2"

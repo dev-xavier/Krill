@@ -1,23 +1,15 @@
-package com.xavier.krill.test
+package com.xavier.krill.test.system_bar
 
-import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.*
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import com.xavier.krill.base.ViewBindingActivity
 import com.xavier.krill.databinding.ActivitySystemBarBinding
 import com.xavier.krill.utils.toast
 import com.xavier.system_bar.kts.*
 import com.xavier.system_bar.utils.SystemBarUtils
-import kotlinx.coroutines.flow.*
-import timber.log.Timber
 
 class SystemBarActivity : ViewBindingActivity<ActivitySystemBarBinding>() {
 

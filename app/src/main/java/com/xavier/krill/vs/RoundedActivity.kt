@@ -12,11 +12,11 @@ import android.view.ViewOutlineProvider
 import com.google.android.material.shape.CornerFamily
 import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.shape.ShapeAppearanceModel
+import com.xavier.installer.utils.dpTpx
 import com.xavier.krill.R
 import com.xavier.krill.base.ViewBindingActivity
 import com.xavier.krill.databinding.ActivityRoundedBinding
 import com.xavier.krill.utils.color
-import com.xavier.krill.utils.dp2px
 
 @SuppressLint("SetTextI18n")
 class RoundedActivity : ViewBindingActivity<ActivityRoundedBinding>() {
@@ -40,7 +40,7 @@ class RoundedActivity : ViewBindingActivity<ActivityRoundedBinding>() {
     }
 
     private fun roundFive() {
-        val cornerSize = 16F.dp2px
+        val cornerSize = 16F.dpTpx
         val shapeAppearanceModel = ShapeAppearanceModel.builder()
             .setTopRightCorner(CornerFamily.ROUNDED, cornerSize)
             .setBottomLeftCorner(CornerFamily.ROUNDED, cornerSize)
@@ -52,7 +52,7 @@ class RoundedActivity : ViewBindingActivity<ActivityRoundedBinding>() {
         val viewOutlineProvider = object : ViewOutlineProvider() {
             override fun getOutline(view: View?, outline: Outline?) {
                 if (view == null || outline == null) return
-                val radius = 16F.dp2px
+                val radius = 16F.dpTpx
                 val path = Path()
                 val rectF = RectF(0F, 0F, view.width.toFloat(), view.height.toFloat())
                 //val radii = floatArrayOf(0F, 0F, radius, radius, 0F, 0F, radius, radius)
@@ -89,7 +89,7 @@ class RoundedActivity : ViewBindingActivity<ActivityRoundedBinding>() {
     }
 
     private fun roundFour() {
-        val cornerSize = 16F.dp2px
+        val cornerSize = 16F.dpTpx
         val shapeAppearanceModel = ShapeAppearanceModel.builder()
             .setTopLeftCorner(CornerFamily.ROUNDED, cornerSize)
             .build()
@@ -100,7 +100,7 @@ class RoundedActivity : ViewBindingActivity<ActivityRoundedBinding>() {
         val viewOutlineProvider = object : ViewOutlineProvider() {
             override fun getOutline(view: View?, outline: Outline?) {
                 if (view == null || outline == null) return
-                val radius = 16F.dp2px
+                val radius = 16F.dpTpx
                 val radiusInt = radius.toInt()
                 outline.setRoundRect(
                     0, 0, view.width + radiusInt, view.height + radiusInt, radius
@@ -120,7 +120,7 @@ class RoundedActivity : ViewBindingActivity<ActivityRoundedBinding>() {
     }
 
     private fun roundThree() {
-        val cornerSize = 16F.dp2px
+        val cornerSize = 16F.dpTpx
         val shapeAppearanceModel = ShapeAppearanceModel.builder()
             .setTopLeftCorner(CornerFamily.ROUNDED, cornerSize)
             .setTopRightCorner(CornerFamily.ROUNDED, cornerSize)
@@ -132,7 +132,7 @@ class RoundedActivity : ViewBindingActivity<ActivityRoundedBinding>() {
         val viewOutlineProvider = object : ViewOutlineProvider() {
             override fun getOutline(view: View?, outline: Outline?) {
                 if (view == null || outline == null) return
-                val radius = 16F.dp2px
+                val radius = 16F.dpTpx
                 outline.setRoundRect(
                     0, 0, view.width, view.height + radius.toInt(), radius
                 )
@@ -185,7 +185,7 @@ class RoundedActivity : ViewBindingActivity<ActivityRoundedBinding>() {
 
     private fun roundOne() {
         val shapeAppearanceModel = ShapeAppearanceModel.builder()
-            .setAllCorners(CornerFamily.ROUNDED, 16F.dp2px)
+            .setAllCorners(CornerFamily.ROUNDED, 16F.dpTpx)
             .build()
         val shapeDrawable = MaterialShapeDrawable(shapeAppearanceModel).apply {
             setTint(R.color.purple_500.color())
@@ -194,7 +194,7 @@ class RoundedActivity : ViewBindingActivity<ActivityRoundedBinding>() {
         val viewOutlineProvider = object : ViewOutlineProvider() {
             override fun getOutline(view: View?, outline: Outline?) {
                 if (view == null || outline == null) return
-                outline.setRoundRect(0, 0, view.width, view.height, 16F.dp2px)
+                outline.setRoundRect(0, 0, view.width, view.height, 16F.dpTpx)
             }
         }
         binding.run {

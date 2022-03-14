@@ -11,20 +11,49 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Krill">
         <activity
+            android:name=".test.api.ApiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".test.event_dispatch.EventDispatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".test.ThirdLaunchActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+
+                <!-- 协议部分，随便设置 -->
+                <data
+                    android:host="thisapp"
+                    android:path="/content"
+                    android:port="8888"
+                    android:scheme="openapp" />
+                <!-- 下面这几行也必须得设置 -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".test.shape_drawable.ShapeDrawableActivity"
+            android:exported="false" />
+        <activity
             android:name=".vs.RoundedActivity"
             android:exported="false" />
         <activity
-            android:name=".test.ImmersiveActivity"
+            android:name=".test.system_bar.ImmersiveActivity"
             android:exported="false" />
         <activity
-            android:name=".test.ImmersiveSystemBarActivity"
+            android:name=".test.system_bar.ImmersiveSystemBarActivity"
             android:exported="false" />
         <activity
-            android:name=".test.FullScreenExperienceActivity"
+            android:name=".test.system_bar.FullScreenExperienceActivity"
             android:exported="false"
             android:theme="@style/Theme.FullScreenExperience" />
         <activity
-            android:name=".test.SystemBarActivity"
+            android:name=".test.system_bar.SystemBarActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
